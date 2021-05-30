@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 using SimpleCrudOnDocker.Models;
 
 [ApiController]
-[Route("api/v1/[controller]/[action]/{id?}")]
+[Route("api/v1/[controller]/[action]")]
 public class ProductController : ControllerBase
 {
     [HttpPost]
