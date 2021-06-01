@@ -31,6 +31,9 @@ namespace SimpleCrudOnDocker
             services.AddControllers();
             services.AddDbContext<ProductDBContext>();
 
+            services.AddLogging();
+            // services.AddScoped<ILogger>();
+
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "SimpleCrudOnDocker", Version = "v1" });
