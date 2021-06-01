@@ -9,7 +9,7 @@ namespace SimpleCrudOnDocker.MyDBContext
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("server=.;initial catalog=simplecruddb;integrated security=true");
+            optionsBuilder.UseSqlServer("");
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
